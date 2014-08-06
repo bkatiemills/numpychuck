@@ -16,3 +16,11 @@ XHR('http://127.0.0.1:8888', unpackNPY, false, true, true)
 and the guts of the numpy array get laid out in the console, with the original contents 1,3,3,7 clearly visible.
 
 Obviously this is hilariously inadequate for any real purpose at the moment, but it shows that this should be possible, and all that's really needed (as far as I can tell from this test) is a properly written unpacker.
+
+Bits and pieces shamelessly stolen from
+ - http://stackoverflow.com/questions/12793697/sending-a-binary-file-in-tornado
+ - http://stackoverflow.com/questions/11463688/cross-origin-resource-sharing-cors-with-jquery-and-tornado
+ - https://github.com/BillMills/griffinMarkII/blob/master/static/utilities/helpers.js
+
+.npy file format discussed at
+ - https://github.com/numpy/numpy/blob/master/doc/neps/npy-format.rst#format-specification-version-10
